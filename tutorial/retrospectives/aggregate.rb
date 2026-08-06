@@ -15,8 +15,8 @@ target_question = ARGV.shift
 result = true
 
 questionnaires = {}
-Dir.glob("#{directory}/#{type}-*.yaml").sort.each do |yaml|
-  if File.basename(yaml) =~ /#{type}-(.+)\.yaml/
+Dir.glob("#{directory}/#{type}-*.y{,a}ml").sort.each do |yaml|
+  if File.basename(yaml) =~ /#{type}-(.+)\.ya?ml/
     account = $1
     begin
       questionnaires[account] = YAML.load(File.read(yaml, encoding: 'BOM|UTF-8'))

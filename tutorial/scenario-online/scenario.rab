@@ -19,23 +19,23 @@
     * まずはサポーターから発声\n
       (('note:順番はスムーズな進行のために指定しているだけ。'))
 
-= チャット：Discord
+= スライド
 
-  * ボイスチャンネル
-    * #一般：全体向けアナウンス
-    * #グループN：各グループの作業用
-  * テキストチャンネル
-    * #YYYY-MM-DD：今日の連絡用
-    * #グループN：各グループの連絡用
+  * Rabbit Slide Showで公開\n
+    (('note:((<URL:https://slide.rabbit-shocker.org/authors/oss-gate/workshop-tutorial-online/>))'))
+  * スライドソース\n
+    (('note:((<URL:https://github.com/oss-gate/workshop/tree/master/tutorial/scenario-online/>))'))
 
-= チャット：Gitter
+= チャット：Element
 
-  * gitter.im/oss-gate/(({${地域}}))\n
-    (('note:例：((<URL:https://gitter.im/oss-gate/tokyo>))'))
-  * オンラインで相談できる場所
-  * 今日は連絡用に使う
+  * 一般ルーム\n
+    (('note:((<URL:https://matrix.to/#/#oss-gate_general:gitter.im>))'))
+    * オンラインで相談できる場所
     * 登録してなにか書き込もう！
-  * 明日からも使おう！
+    * 明日からも使おう！
+  * ワークショップルーム\n
+    (('note:((<URL:https://matrix.to/#/#oss-gate_online-workshop:gitter.im>))'))
+    * ワークショップで使う場所
 
 = OSS Gate？
 
@@ -205,58 +205,11 @@ OSSを動かす
 (('tag:center'))
 (('note:（詳細は後述）'))
 
-  (1) 対象OSSを決める
-  (2) 作業メモを書く場所を用意
+  (1) 作業メモを書く場所を用意
+  (2) 対象OSSを決める
   (3) 作業メモを書きながら\n
       ((*公式サイト・README通り*))\n
       動かす
-
-= OSSとは
-
-  * オープンソースライセンスを\n
-    設定したソフトウェア
-    * ((<URL:https://opensource.org/licenses/alphabetical>))
-  * ライセンスを確認すれば\n
-    OSSかどうかわかる
-    * OSS「っぽい」は存在しない
-
-= 対象OSS決め
-
-  * ビギナーが決める！
-    * こちらから出す「課題」は無い
-  * サポーターは↑をサポート
-    * 自分の知らないOSSや言語でもよい\n
-      (('note:ビギナーと一緒に悩んであげよう！'))
-
-= 対象OSS決めのヒント
-
-  * 使っているOSSから選ぶ\n
-    (('note:ブラウザの拡張機能・便利なコマンドラインツール等'))\n
-    (('note:無意識で使っている物の中にもOSSはある'))
-    * 難易度は気にしなくてよい！\n
-      (('note:サポーターがサポートするから！'))
-    * 小規模なプロジェクトや\n
-      新しめのプロジェクトは狙い目\n
-      (('note:フィードバックできる部分が多い'))
-
-= 対象OSS決めデモ
-
-(('tag:center'))
-(('tag:x-large'))
-デモ
-
-  * 最近使っているOSSは？
-    * ライセンス確認→OK！
-  * その中で一番ときめくのは？
-  * ではそれにしましょう！
-
-= 動かすときのポイント
-
-  * 作業メモを書く
-    * 🔜メモを書く場所はこのあと作る
-  * なにかする毎に書く
-    * 例：ドキュメントを読み始めた
-    * 例：次のドキュメントを読み始めた
 
 = 作業メモを書く場所を作る
 
@@ -286,6 +239,59 @@ OSSを動かす
     （↑実際の結果）
     XXX is not found
   ↑というようにパッケージがないと言われる
+
+= 対象OSS決め
+
+  * ビギナーが決める！
+    * こちらから出す「課題」は無い
+  * サポーターは↑をサポート
+    * 自分の知らないOSSや言語でもよい\n
+      (('note:ビギナーと一緒に悩んであげよう！'))
+
+= OSSとは
+
+  * オープンソースライセンスを\n
+    設定したソフトウェア
+    * ((<URL:https://opensource.org/licenses/>))
+  * ライセンスを確認すれば\n
+    OSSかどうかわかる
+    * OSS「っぽい」は存在しない
+
+= 対象OSS決めのヒント1
+
+  * 使っているOSSから選ぶ\n
+    (('note:ブラウザの拡張機能・便利なコマンドラインツール等'))\n
+    (('note:無意識で使っている物の中にもOSSはある'))
+    * 難易度は気にしなくてよい！\n
+      (('note:サポーターがサポートするから！'))
+
+= 対象OSS決めのヒント2
+
+  * 新しめのプロジェクト」や\n
+    「安定版」でない最新の開発版\n
+    (('note:こなれていないので、使っていてつまずきやすい'))\n
+    (('note:「正常な動作」との差に気付きやすい'))
+  * 小規模なプロジェクト\n
+    (('note:開発者の目が届かなくて見落とされている'))\n
+    (('note:不具合があるかも'))
+
+= 対象OSS決めデモ
+
+(('tag:center'))
+(('tag:x-large'))
+デモ
+
+  * 最近使っているOSSは？
+    * ライセンス確認→OK！
+  * その中で一番ときめくのは？
+  * ではそれにしましょう！
+
+= 動かすときのポイント
+
+  * 作業メモを書く
+  * なにかする毎に書く
+    * 例：ドキュメントを読み始めた
+    * 例：次のドキュメントを読み始めた
 
 = ユーザーとして動かす
 
@@ -353,6 +359,8 @@ OSSを動かす
 
   * せっかくなので
     色々質問してみよう
+  * 前半のみ参加のサポーターの方は
+    後ほどアンケート回答をお願いします！
 
 = 現状確認
 
@@ -617,8 +625,18 @@ OSSの開発を\n
     * 多くの人と協力して継続したい！
     * 会場提供・サポーター・進行役・…
   * チャットで色々話してるよ！
-    * (('tag:x-small'))https://gitter.im/oss-gate/(({${地域}}))
-    * (('tag:x-small'))例：((<URL:https://gitter.im/oss-gate/tokyo>))
+    * (('tag:x-small'))((<URL:https://matrix.to/#/#oss-gate_general:gitter.im>))
+
+= 今後のイベントアナウンス
+
+  * Doorkeeper
+  * GitHub Discussions\n
+    (('note:((<URL:https://github.com/oss-gate/workshop/discussions/categories/announcements>))'))
+    * 通知設定: Custom -> Discussions
+
+  # image
+  # src = ../images/oss-gate-watch.png
+  # relative_width = 100
 
 = おねがい
 
@@ -637,3 +655,5 @@ OSSの開発を\n
   (3) (('tag:x-small'))git add → git commit → git push
   (4) (('tag:x-small'))github.com/自分のアカウント/workshop
       を開いて「Pull request」
+
+(('note:回答ツールもあるよ: ((<URL:https://github.com/blacktoad30/survey-sh>))'))
